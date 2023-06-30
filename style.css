@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Nunito", sans-serif;
 }
 
 .email span {
@@ -37,7 +38,7 @@
 .btn {
   height: 34px;
   width: 40px;
-  background-color: rgb(0, 115, 12);
+  background-color: #00730c;
   color: white;
   border-radius: 10px;
   border: none;
@@ -116,7 +117,7 @@
   height: 2px;
   width: 30px;
   border-radius: 5px;
-  background-color: rgb(0, 115, 12);
+  background-color: #00730c;
 }
 .mobile-menu div:last-child {
   width: 18px;
@@ -124,4 +125,101 @@
 }
 .mobile-menu:hover div:last-child {
   width: 30px;
+}
+
+.hero-content-wraper {
+  position: relative;
+  background: #00730c;
+  background: linear-gradient(36deg, rgba(0, 115, 12, 0.8) 0%, rgba(251, 246, 238, 0) 95%);
+}
+
+.hero-img-wraper {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 345px;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 35px;
+}
+
+.sub-heading {
+  display: flex;
+  margin-bottom: 10px;
+}
+.sub-heading span {
+  margin-right: 5px;
+  content: url(img/Vector.svg);
+}
+
+.heading {
+  margin-bottom: 15px;
+}
+.heading span {
+  color: #00730c;
+}
+
+.heading-wrap {
+  margin-bottom: 40px;
+}
+
+.heading-btn-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.heading-btn {
+  width: 303px;
+  height: 44px;
+}
+
+.see-work {
+  margin-top: 19px;
+  color: #00730c;
+  text-decoration: none;
+}
+.see-work span {
+  content: url(img/Arrow-Icon2.svg);
+  margin-left: 12px;
+}
+
+.customrs-wrap {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.customrs {
+  display: flex;
+}
+.customrs div:last-child {
+  margin-left: 11px;
+}
+.customrs div {
+  height: 32px;
+  width: 133px;
+  border-radius: 32px;
+  font-size: 10px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 32px;
+  background: rgb(255, 248, 241);
+  background: linear-gradient(0deg, rgb(255, 248, 241) 0%, rgb(203, 229, 206) 100%);
+}
+.customrs div span {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.bg-img {
+  content: url(img/BG-Img.png);
+  position: absolute;
+  bottom: 0;
 }/*# sourceMappingURL=style.css.map */

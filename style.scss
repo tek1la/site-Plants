@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Nunito", sans-serif;
 }
 
 .email {
@@ -40,7 +41,7 @@
 .btn {
   height: 34px;
   width: 40px;
-  background-color: rgba(0, 115, 12, 1);
+  background-color: $main-color;
   color: white;
   border-radius: 10px;
   border: none;
@@ -120,7 +121,7 @@
     height: 2px;
     width: 30px;
     border-radius: 5px;
-    background-color: rgba(0, 115, 12, 1);
+    background-color: $main-color;
   }
   div:last-child {
     width: 18px;
@@ -129,4 +130,111 @@
   &:hover div:last-child {
     width: 30px;
   }
+}
+
+// content
+
+.hero-content-wraper {
+  position: relative;
+  background: $main-color;
+  background: linear-gradient(
+    36deg,
+    rgba(0, 115, 12, 0.8) 0%,
+    rgba(251, 246, 238, 0) 95%
+  );
+}
+
+.hero-img-wraper {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 345px;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 35px;
+}
+
+.sub-heading {
+  display: flex;
+  margin-bottom: 10px;
+  span {
+    margin-right: 5px;
+    content: url(img/Vector.svg);
+  }
+}
+
+.heading {
+  margin-bottom: 15px;
+  span {
+    color: $main-color;
+  }
+}
+
+.heading-wrap {
+  margin-bottom: 40px;
+}
+
+.heading-btn-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.heading-btn {
+  width: 303px;
+  height: 44px;
+}
+
+.see-work {
+  margin-top: 19px;
+  color: $main-color;
+  text-decoration: none;
+  span {
+    content: url(img/Arrow-Icon2.svg);
+    margin-left: 12px;
+  }
+}
+
+.customrs-wrap {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.customrs {
+  display: flex;
+  div:last-child {
+    margin-left: 11px;
+  }
+  div {
+    height: 32px;
+    width: 133px;
+    border-radius: 32px;
+    font-size: 10px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 32px;
+    background: rgb(255, 248, 241);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 248, 241, 1) 0%,
+      rgba(203, 229, 206, 1) 100%
+    );
+    span {
+      font-size: 12px;
+      font-weight: 700;
+    }
+  }
+}
+
+.bg-img {
+  content: url(img/BG-Img.png);
+  position: absolute;
+  bottom: 0;
 }
